@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 2rem 3rem;
+    font-size: 3rem;
+    background-color: rgb(240, 120, 51);
+    color: white;
+    border: transparent;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button::before {
+    content: 'Go!';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(211, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform .2s ease-in-out;
+}
+
+button:hover::before {
+    transform: translateY(0%);
+}

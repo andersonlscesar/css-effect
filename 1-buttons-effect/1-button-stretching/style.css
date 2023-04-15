@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+button {
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    color: #E13226;
+    border: 3px solid #E13226;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+    font-weight: bolder;
+    letter-spacing: 1rem;
+    border: 6px solid #E13226;
+
+}
