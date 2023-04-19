@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 3rem;
+    background-color: none;
+    color: tomato;
+    border: 2px solid tomato;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .5s;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: tomato;
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    transition: all .5s;
+
+}
+
+button:hover::before {
+    height: 200%;
+    border-radius: 0 0 50% 50%;
+}
+
+button:hover {
+    color: white;
+
+}
